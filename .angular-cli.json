@@ -1,0 +1,42 @@
+{
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"project": {
+		"name": "web-ieeesb-frontend"
+	},
+	"apps": [
+		{
+			"root": "src",
+			"outDir": "dist",
+			"assets": [
+				"css",
+				"images",
+				"js",
+				"videos",
+				"ckeditor",
+				"favicon.ico"
+			],
+			"index": "index.html",
+			"main": "main.ts",
+			"polyfills": "polyfills.ts",
+			"tsconfig": "tsconfig.app.json",
+			"prefix": "app",
+			"styles": [
+				"./css/styles.less"
+			],
+			"scripts": [
+				"../node_modules/jquery/dist/jquery.min.js"
+			],
+			"environmentSource": "environments/environment.ts",
+			"environments": {
+				"dev": "environments/environment.ts",
+				"prod": "environments/environment.prod.ts"
+			}
+		}
+	],
+	"defaults": {
+		"styleExt": "less",
+		"class": {
+			"spec": false
+		}
+	}
+}
